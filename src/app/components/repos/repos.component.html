@@ -1,4 +1,4 @@
-<input placeholder="enter repo name" (keyup)="onTextChange($event)">
+<input id="search-input" placeholder="enter repo name" (keyup)="onTextChange($event)">
 <span *ngIf="loading">Loading</span>
 <app-repo-item *ngFor="let repo of repos" [repo]="repo"></app-repo-item>
 <span *ngIf="errorText">{{errorText}}</span>
