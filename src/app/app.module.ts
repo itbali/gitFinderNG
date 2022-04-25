@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { ReposComponent } from './components/repos/repos.component';
 import { RepoItemComponent } from './components/repo-item/repo-item.component';
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RepoItemComponent } from './components/repo-item/repo-item.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
