@@ -7,7 +7,7 @@ import {Repo} from "../../Repo";
   styleUrls: ['./repo-item.component.css']
 })
 export class RepoItemComponent implements OnInit {
-  @Input() repo: Repo | undefined;
+  @Input() repo: Repo | undefined ;
 
   constructor() { }
 

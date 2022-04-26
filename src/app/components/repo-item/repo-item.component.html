@@ -1,4 +1,11 @@
 <div class="repo">
-  <h3>{{repo?.name}}</h3>
-  <p>stars:{{repo?.stargazers_count}}</p>
+
+  <img class="avatar" src="{{repo?.owner?.avatar_url}}" alt="">
+  <div class="repoContainer">
+    <h2>{{repo?.name}}</h2>
+    <p>stars: {{repo?.stargazers_count}}</p>
+    <p>language: {{repo?.language}}</p>
+    <a href="{{repo?.html_url}}">{{repo?.html_url}}</a>
+  </div>
+
 </div>

@@ -1,6 +1,18 @@
+*{
+  box-sizing: border-box;
+  }
+
 .container {
   margin: 100px;
   padding: 40px;
   border-radius: 6px;
   border: 2px solid #4f4f4f;
+  display: flex;
+  flex-direction: column;
+  }
+
+@media (max-width: 900px) {
+  .container{
+    margin: 50px;
+    }
   }
