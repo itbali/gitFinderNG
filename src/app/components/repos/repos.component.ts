@@ -106,6 +106,7 @@ export class ReposComponent implements OnInit {
           })
 
         } else {
+          this.repos = []
           this.errorText = 'минимум 2 символа'
         }
       },

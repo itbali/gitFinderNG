@@ -16,3 +16,10 @@
     margin: 50px;
     }
   }
+
+@media (max-width: 600px) {
+  .container{
+    margin: 30px;
+    padding: 20px;
+    }
+  }
