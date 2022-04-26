@@ -1,4 +1,10 @@
-<input id="search-input" placeholder="enter repo name">
+<form>
+  <div class="form-control">
+    <label for="searchInput">Repo Name</label>
+    <input name="text" id="searchInput" placeholder="enter repo name">
+  </div>
+</form>
+
 <span *ngIf="loading">Loading</span>
 <app-repo-item *ngFor="let repo of repos" [repo]="repo"></app-repo-item>
-<span *ngIf="errorText">{{errorText}}</span>
+<p *ngIf="errorText">{{errorText}}</p>
