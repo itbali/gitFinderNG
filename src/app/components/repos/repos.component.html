@@ -5,8 +5,7 @@
   </div>
 </form>
 
-<span *ngIf="loading">Loading</span>
-
+<app-loader *ngIf="loading"></app-loader>
 <div class="reposContainer">
   <app-repo-item class="singleRepo" *ngFor="let repo of repos" [repo]="repo"></app-repo-item>
 </div>

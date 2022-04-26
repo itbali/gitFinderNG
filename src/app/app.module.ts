@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ReposComponent } from './components/repos/repos.component';
 import { RepoItemComponent } from './components/repo-item/repo-item.component';
 import {MatInputModule} from "@angular/material/input";
+import { LoaderComponent } from './components/loader/loader.component';
 
 const appRoutes: Routes = [
   {path: '', component: ReposComponent}
@@ -20,6 +21,7 @@ const appRoutes: Routes = [
     HeaderComponent,
     ReposComponent,
     RepoItemComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
