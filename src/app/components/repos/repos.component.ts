@@ -59,14 +59,7 @@ export class ReposComponent implements OnInit {
     input$.subscribe({
       next: (event: any) => {
 
-        //записываем в адресную строку текущий запрос
-        this.router.navigate([''], {
-          queryParams: {
-            q: `${event.target.value}+in:name`,
-            per_page: `20`
-          }
-        })
-          .then(r => console.log(r))
+
 
         //если что-то написали и это не пробелы, то инициируем запрос на серв
         if (event.target.value.trim().length > 1) {
@@ -103,6 +96,15 @@ export class ReposComponent implements OnInit {
                 clearTimeout(loadingID)
               }
             )
+
+          //записываем в адресную строку текущий запрос
+          this.router.navigate([''], {
+            queryParams: {
+              q: `${event.target.value}+in:name`,
+              per_page: `20`
+            }
+          })
+
         } else {
           this.errorText = 'минимум 2 символа'
         }
